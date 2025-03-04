@@ -24,13 +24,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-red-500 poppins-regular">
+  <body class="bg-[#F4F7FF] poppins-regular">
     <!-- home page -->
     <section class="max-w-7xl min-h-screen mx-auto">
       <!-- header start -->
       <header class="pt-5 mb-5">
         <!-- nav start -->
-        <nav class="bg-white flex justify-between items-center p-3 rounded-lg">
+        <nav class="bg-white flex justify-between items-center p-3 rounded-lg shadow-md">
           <!-- nav logo and title -->
           <div class="flex items-center gap-2">
             <img class="h-8" src="assets/logo.png" alt="logo" />
@@ -74,8 +74,8 @@
               </div>
             </div>
             <!-- upper middle box -->
-            <div
-              class="bg-linear-65 from-[#3752FD] to-[#9BA8F8] flex px-8 py-3 rounded-lg items-center gap-5"
+            <div id="query-btn"
+              class="bg-linear-65 from-[#3752FD] to-[#9BA8F8] flex px-8 py-3 rounded-lg items-center gap-5 cursor-pointer"
             >
               <img
                 class="border border-dashed border-white h-14"
@@ -113,13 +113,13 @@
               <p class="bg-white p-3 text-sm text-gray-400 rounded-lg mb-4">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
-              <div class="flex gap-7">
+              <div class="flex gap-5">
                 <div>
                   <p class="text-sm text-gray-500">Deadline</p>
                   <p>21 March 2025</p>
                 </div>
-                <button class="bg-[#3752FD] px-6 rounded-lg text-white">
-                  Complete
+                <button class="bg-[#3752FD] px-6 rounded-lg text-white cursor-pointer">
+                  Completed
                 </button>
               </div>
             </div>
@@ -132,13 +132,13 @@
               <p class="bg-white p-3 text-sm text-gray-400 rounded-lg mb-4">
                 Store the user's preference in localStorage, update CSS....
               </p>
-              <div class="flex gap-7">
+              <div class="flex gap-5">
                 <div>
                   <p class="text-sm text-gray-500">Deadline</p>
                   <p>21 March 2025</p>
                 </div>
-                <button class="bg-[#3752FD] px-6 rounded-lg text-white">
-                  Complete
+                <button class="bg-[#3752FD] px-6 rounded-lg text-white cursor-pointer">
+                  Completed
                 </button>
               </div>
             </div>
@@ -153,13 +153,13 @@
               <p class="bg-white p-3 text-sm text-gray-400 rounded-lg mb-4">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
-              <div class="flex gap-7">
+              <div class="flex gap-5">
                 <div>
                   <p class="text-sm text-gray-500">Deadline</p>
                   <p>21 March 2025</p>
                 </div>
-                <button class="bg-[#3752FD] px-6 rounded-lg text-white">
-                  Complete
+                <button class="bg-[#3752FD] px-6 rounded-lg text-white cursor-pointer">
+                  Completed
                 </button>
               </div>
             </div>
@@ -172,13 +172,13 @@
               <p class="bg-white p-3 text-sm text-gray-400 rounded-lg mb-4">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
-              <div class="flex gap-7">
+              <div class="flex gap-5">
                 <div>
                   <p class="text-sm text-gray-500">Deadline</p>
                   <p>21 March 2025</p>
                 </div>
-                <button class="bg-[#3752FD] px-6 rounded-lg text-white">
-                  Complete
+                <button class="bg-[#3752FD] px-6 rounded-lg text-white cursor-pointer">
+                  Completed
                 </button>
               </div>
             </div>
@@ -193,13 +193,13 @@
               <p class="bg-white p-3 text-sm text-gray-400 rounded-lg mb-4">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
-              <div class="flex gap-7">
+              <div class="flex gap-5">
                 <div>
                   <p class="text-sm text-gray-500">Deadline</p>
                   <p>21 March 2025</p>
                 </div>
-                <button class="bg-[#3752FD] px-6 rounded-lg text-white">
-                  Complete
+                <button class="bg-[#3752FD] px-6 rounded-lg text-white cursor-pointer">
+                  Completed
                 </button>
               </div>
             </div>
@@ -214,13 +214,13 @@
               <p class="bg-white p-3 text-sm text-gray-400 rounded-lg mb-4">
                 Debug using Chrome DevTools, check for overlapping...
               </p>
-              <div class="flex gap-7">
+              <div class="flex gap-5">
                 <div>
                   <p class="text-sm text-gray-500">Deadline</p>
                   <p>21 March 2025</p>
                 </div>
-                <button class="bg-[#3752FD] px-6 rounded-lg text-white">
-                  Complete
+                <button class="bg-[#3752FD] px-6 rounded-lg text-white cursor-pointer">
+                  Completed
                 </button>
               </div>
             </div>
@@ -237,7 +237,7 @@
               <img class="h-3" src="assets/activity.png" alt="activity" />
               <p class="text-gray-700 text-sm">Activity Log</p>
             </div>
-            <button class="bg-[#3752FD] px-6 py-2 text-white rounded-lg">
+            <button class="bg-[#3752FD] px-6 py-2 text-white rounded-lg cursor-pointer">
               Clear History
             </button>
           </div>
@@ -247,5 +247,9 @@
       </main>
       <!-- Main body end -->
     </section>
+
+    <!-- javascript files -->
+     <script src="javascript/discover.js"></script>
+     <script src="./javascript/history.js"></script>
   </body>
 </html>

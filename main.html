@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Poppins google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- external CSS -->
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="poppins-regular bg-[#F4F7FF]">
+    <section class="max-w-7xl min-h-screen mx-auto">
+        <!-- header start -->
+      <header class="pt-5 mb-5">
+        <!-- nav start -->
+        <nav class="bg-white flex justify-between items-center p-3 rounded-lg shadow-md">
+          <!-- nav logo and title -->
+          <div class="flex items-center gap-2">
+            <img class="h-8" src="assets/logo.png" alt="logo" />
+            <h2 class="text-3xl">
+              Dev<span class="font-extrabold">Board</span>
+            </h2>
+          </div>
+          <!-- nav Back to desk button -->
+          <div>
+            <button id="back-desk-btn" class="btn bg-[#3752FD] text-white rounded-lg shadow-md border-none">Back to desk</button>
+          </div>
+        </nav>
+        <!-- nav end -->
+      </header>
+      <!-- header end -->
+
+      <h2 class="font-bold text-3xl text-center mb-4">Blogs</h2>
+
+      <!-- Questions part start -->
+       <!-- 1st question -->
+       <div class="bg-white rounded-lg mb-6 shadow-md">
+        <p class="px-6 pt-6 font-bold text-xl">Question-1:What are the different ways to select an element in the DOM?</p>
+        <hr class="text-gray-200 border-dashed mt-3 mb-3" />
+        <p class="text-gray-500 text-lg px-6 pb-6">There are several ways to select an element in DOM. Here's the common methods:<br>
+        1.<span class="font-bold">By ID: </span>document.getElementById("myId")<br>
+        2.<span class="font-bold">By Class: </span>document.getElementByClassName("myClass")<br>
+        3.<span class="font-bold">By Tag: </span>document.getElementByTagName("div")<br>
+        4.<span class="font-bold">CSS Selector (First match): </span>document.querySelector(".myClass")<br>
+        5.<span class="font-bold">CSS Selector (All matches): </span>document.querySelectorAll(".myClass")<br>
+        </p>
+       </div>
+
+       <!-- 2nd question -->
+       <div class="bg-white rounded-lg mb-6 shadow-md">
+        <p class="px-6 pt-6 font-bold text-xl">Question-2:What are the differences between innerText, innerHTML and textContent?</p>
+        <hr class="text-gray-200 border-dashed mt-3 mb-3" />
+        <p class="text-gray-500 text-lg px-6 pb-6">
+        <span class="font-bold">innerText: </span> Returns visible text in the html tag and ignore the hidden elements<br>
+        <span class="font-bold">innerHTML: </span> Returns HTML code also sets, parses HTML<br>
+        <span class="font-bold">textContent: </span>Returns all text<br>
+        </p>
+       </div>
+
+       <!-- 3rd question -->
+       <div class="bg-white rounded-lg mb-6 shadow-md">
+        <p class="px-6 pt-6 font-bold text-xl">Question-3:What is event delegation in the DOM></p>
+        <hr class="text-gray-200 border-dashed mt-3 mb-3" />
+        <p class="text-gray-500 text-lg px-6 pb-6">Event delegation is a technique where a parent element handles events for its child elements, even if they are added dynamically.<br>
+        1.<span class="font-bold">Example:</span><br>
+        <pre>
+            document.getElementById("parent").addEventListener("click",function(event){<br>
+                &nbsp;if(event.target.matches(".child")){<br>
+                    &nbsp;console.log("child clicked:", event.target);
+                }
+            });
+        </pre>
+        </p>
+       </div>
+
+       <!-- 4th question -->
+       <div class="bg-white rounded-lg mb-6 shadow-md">
+        <p class="px-6 pt-6 font-bold text-xl">Question-4:What is event bubbling in the DOM?</p>
+        <hr class="text-gray-200 border-dashed mt-3 mb-3" />
+        <p class="text-gray-500 text-lg px-6 pb-6">Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.
+        </p>
+       </div>
+
+       <!-- 5th question -->
+       <div class="bg-white rounded-lg mb-6 shadow-md">
+        <p class="px-6 pt-6 font-bold text-xl">Question-5:How do you create , add and remove elements using javascript?</p>
+        <hr class="text-gray-200 border-dashed mt-3 mb-3" />
+        <p class="text-gray-500 text-lg px-6 pb-6">
+        1.<span class="font-bold">Create an Element<br></span>by document.createElement() we can create a new element<br>
+         let newDiv = document.createElement("div");<br>
+    newDiv.textContent = "Hello, World!";<br>
+        2.<span class="font-bold">Add an Element</span><br>
+        document.body.appendChild(newDiv);<br>
+        3.<span class="font-bold">Remove an Element</span><br>
+        let parent = document.getElementById("parent");<br>
+        let child = document.getElementById("child");<br>
+        parent.removeChild(child);
+
+        </p>
+       </div>
+      <!-- Questions part end -->
+    </section>
+  </body>
+</html>
